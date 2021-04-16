@@ -6,6 +6,20 @@ Tips and tricks for ansible
 
 **ansible 'appservers:&aws' -m ping --check** => Dry run, only shows what will happen, without actually performing tasks
 
+--check = dry run 
+--list-hosts = only list hosts
+ ansible-playbook --limit '!ogpay-prod.softmetrixgroup.com:!adxpay*' add_line_catalina.yaml --check
+
+
+Multiple groups	
+webservers:dbservers - all hosts in webservers plus all hosts in dbservers
+
+Excluding groups	
+webservers:!atlanta - all hosts in webservers except those in atlanta
+
+Intersection of groups	
+webservers:&staging - any hosts in webservers that are also in staging
+
 
 # Run ansible on Windows client
 
