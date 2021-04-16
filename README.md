@@ -9,6 +9,8 @@ Tips and tricks for ansible
 
 # Run ansible on Windows client
 
+[Complete guide](https://www.thomaspreischl.de/manage-windows-with-ansible-pt1/)
+
 **On linux install:**
 
 ```
