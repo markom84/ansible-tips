@@ -37,7 +37,7 @@ pip install pywinrm[kerberos]
 
 ```
 [windows]
-10.3.4.179 ansible_python_interpreter=/usr/bin/python3 ansible_connection=winrm ansible_user=usersible_password=password ansible_port=5986 ansible_winrm_server_cert_validation=ignore
+10.3.4.179 ansible_python_interpreter=/usr/bin/python3 ansible_connection=winrm ansible_user=user ansible_password=password ansible_port=5986 ansible_winrm_server_cert_validation=ignore
 ```
 
 
